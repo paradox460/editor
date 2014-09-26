@@ -1,4 +1,4 @@
-# Editor
+# Editors
 
 A little utility gem that is designed to collect user input through the user's text editor.
 
@@ -18,16 +18,16 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install editor
+    $ gem install editors
 
 ## Usage
 
-**[docs](http://rubydoc.info/github/paradox460/editor/master/)**
+**[docs](http://rubydoc.info/github/paradox460/editors/master/)**
 
-There are 2 main ways of using `Editor.` To open files, and to collect input.
+There are 2 main ways of using `Editors`. To open files, and to collect input.
 
 ### Files
-[`Editor.file`](http://rubydoc.info/github/paradox460/editor/master/Editor.file)
+[`Editors.file`](http://rubydoc.info/github/paradox460/editors/master/Editor.file)
 ```ruby
 Editor.file('/path/to/your/file.rb')
 ```
@@ -35,7 +35,7 @@ Editor.file('/path/to/your/file.rb')
 ### Collecting input
 This is what Editor was initially written for
 
-[`Editor.temp`](http://rubydoc.info/github/paradox460/editor/master/Editor.temp)
+[`Editors.temp`](http://rubydoc.info/github/paradox460/editors/master/Editor.temp)
 ```ruby
 Editor.temp('String to put into the tempfile before the user edits it')
 ```

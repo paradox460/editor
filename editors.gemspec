@@ -2,11 +2,11 @@
 # rubocop:disable all
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'editor/version'
+require 'editors/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "editor"
-  spec.version       = Editor::VERSION
+  spec.name          = "editors"
+  spec.version       = Editors::VERSION
   spec.authors       = ["Jeff Sandberg"]
   spec.email         = ["paradox460@gmail.com"]
   spec.summary       = %q{A library for invoking the users text editor.}

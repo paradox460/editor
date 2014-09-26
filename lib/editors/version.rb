@@ -1,4 +1,4 @@
-class Editor
+class Editors
   MAJOR = 0
   MINOR = 0
   PATCH = 1

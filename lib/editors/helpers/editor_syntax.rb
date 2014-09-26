@@ -1,4 +1,4 @@
-class Editor
+class Editors
   module Helpers
     # Helpers for generating editor invocation commands
     #

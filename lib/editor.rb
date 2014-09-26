@@ -1,15 +1,15 @@
 require 'english'
-require 'editor/version'
-require 'editor/helpers/editor_syntax'
-require 'editor/helpers/platform_detection'
+require 'editors/version'
+require 'editors/helpers/editor_syntax'
+require 'editors/helpers/platform_detection'
 
 # Editor class. Lets you edit both real and temporary files, and returns their values after editing.
 #
 # @author Jeff Sandberg
 #
-class Editor
-  include Editor::Helpers::PlatformDetection
-  include Editor::Helpers::EditorSyntax
+class Editors
+  include Editors::Helpers::PlatformDetection
+  include Editors::Helpers::EditorSyntax
   attr_reader :content
 
   # Initialize a new editor, with options. You should probably use Editor.edit or Editor.new instead of these

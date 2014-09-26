@@ -1,4 +1,4 @@
-class Editor
+class Editors
   module Helpers
     # Utilities for detecting which platform and which version of ruby the user is running
     #
