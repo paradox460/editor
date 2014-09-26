@@ -15,7 +15,7 @@ class Editor
   # Initialize a new editor, with options. You should probably use Editor.edit or Editor.new instead of these
   # You must pass a file OR temp string, but NOT both
   #
-  # @param options = {} [Hash]
+  # @param options [Hash]
   # @option file [String] options (nil) A file path to edit
   # @option temp [String] options (nil) The content of the tempfile, prior to editing
   # @option line [String] options (1) The line of the file to place the cursor at
@@ -35,8 +35,8 @@ class Editor
   class << self
     # Edit a file from the filesystem, and return its value
     # @param file [String] A file path to edit
-    # @param line = 1 [Fixnum] The line of the file to place the cursor at
-    # @param blocking = true [Boolean] Pass the editor a blocking flag
+    # @param line [Fixnum] The line of the file to place the cursor at
+    # @param blocking [Boolean] Pass the editor a blocking flag
     #
     # @return [String] The value of the file AFTER it was edited
     def file(file, line = 1, blocking = true)
@@ -45,7 +45,7 @@ class Editor
 
     # Edits a temporary file, and return its value
     # @param initial_content [String] The content of the tempfile, prior to editing
-    # @param line = 1 [Fixnum] Tempfile line to place cursor at
+    # @param line [Fixnum] Tempfile line to place cursor at
     #
     # @return [String] The value of the tempfile AFTER it was edited
     def temp(initial_content, line = 1)
@@ -56,7 +56,7 @@ class Editor
   private
 
   # Checks if an options hash contains both file and temp values
-  # @param opts = {} [Hash] Options hash
+  # @param opts [Hash] Options hash
   #
   # @return [Boolean]
   def opts_is_valid?(opts = {})
@@ -95,7 +95,7 @@ class Editor
 
   # Open the users default editor with the params specified
   # @param file [String] File path
-  # @param line=1 [Fixnum] Line number to place cursor at
+  # @param line [Fixnum] Line number to place cursor at
   # @param blocking = true [Boolean] If the editor should be blocking
   def invoke_editor(file, line = 1, blocking = true)
     fail 'Please export $VISUAL or $EDITOR' unless default_editor
@@ -111,7 +111,7 @@ class Editor
   end
 
   # Create and yield a tempfile
-  # @param ext='.rb' [String] File extension for the file to user
+  # @param ext [String] File extension for the file to user
   #
   # @yieldparam [File] The tempfile object
   def temp_file(ext = '.rb')
