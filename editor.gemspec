@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["paradox460@gmail.com"]
   spec.summary       = %q{A library for invoking the users text editor.}
   spec.description   = %q{Library for opening text editors and getting their content as a string. Useful for command line scripts. Somewhat of an extraction from the excellent pry gem.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/paradox460/editor"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
